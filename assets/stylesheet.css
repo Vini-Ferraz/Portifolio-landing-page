@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root{
+    --fundo-cor: #111827;
+    --fundo-cor-circulo-01: #E064F4;
+    --fundo-cor-circulo-02: #0182CA;
+    --elementos-cor: #FFFFFF;
+    --fonte-cor: #FFFFFF;
+    --fonte-estilo: 'Roboto', sans-serif;
+    --fonte-tamanho-titulo-principal-telas-g-m: 50px;
+    --fonte-tamanho-titulo-secundaria-telas-g-m: 30px;
+    --fonte-tamanho-paragrafos-telas-g-m: 20px;
+    --fonte-tamanho-titulo-principal-telas-p: 40px;
+    --fonte-tamanho-titulo-secundaria-telas-p: 25px;
+    --fonte-tamanho-paragrafos-telas-p: 18px;
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--fundo-cor);
 }
