@@ -29,7 +29,7 @@ body{
 .destaque{
     color: var(--fonte-cor-destaque);
 }
-.btn, .btn-hero-row{
+.btn{
     border: 1px solid var(--elementos-cor);
     text-align: center;
 }
@@ -57,7 +57,6 @@ img{
 }
 footer{
     border-top: 1px solid var(--elementos-cor);
-    margin: 0;
 }
 .texto-footer{
     font-style: italic;
@@ -110,18 +109,49 @@ footer{
         background-size: cover;
     }
 
-    .btn-hero-row, .btn{
+    .btn{
         border-radius: 5vw;
         padding: 3% 5%;
     }
     .btn{
         display: block;
     }
+    #redes-socias-footer{
+        width: 50%;
+    }
+    .bola{
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+    }
+    .bola.rosa{
+        background-color: var(--fundo-cor-circulo-01);
+    }
+    .bola.azul{
+        background-color: var(--fundo-cor-circulo-02);
+    }
+    #efeito-vidro{
+        background: var(--fundo-cor);
+        backdrop-filter: blur(100px);
+    }
 
-    .caixa-imagem-projetos{
+
+    #hero-row, .caixa-imagem-projetos, .redes-socias, footer, #redes-socias-footer{
         display: flex;
+    }
+    #hero-row{
+        flex-direction: column-reverse;
+    }
+    .caixa-imagem-projetos, footer{
         flex-direction: column;
+    }
+    #hero-row, .caixa-imagem-projetos, footer, #redes-socias-footer{
         align-items: center;
+    }
+    #hero-row, .caixa-imagem-projetos, footer{
         justify-content: center;
+    }
+    .redes-socias, #redes-socias-footer{
+        justify-content: space-around;
     }
 }
