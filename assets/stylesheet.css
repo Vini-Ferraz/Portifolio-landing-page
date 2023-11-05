@@ -5,6 +5,7 @@
     --fundo-cor-circulo-02: #0182CA;
     --elementos-cor: #FFFFFF;
     --fonte-cor: #FFFFFF;
+    --fonte-cor-destaque: #20C2CC;
     --fonte-estilo: 'Roboto', sans-serif;
     --fonte-tamanho-titulo-principal-telas-g-m: 50px;
     --fonte-tamanho-titulo-secundaria-telas-g-m: 30px;
@@ -25,9 +26,16 @@
 body{
     background-color: var(--fundo-cor);
 }
+.destaque{
+    color: var(--fonte-cor-destaque);
+}
 .btn{
     border: 1px solid var(--elementos-cor);
     border-radius: 1vw;
+}
+.caixa-serviço{
+    border: 2px solid var(--elementos-cor);
+    border-radius: 16vw 64vw 16vw 16vw;
 }
 img{
     width: 200px;
@@ -52,5 +60,8 @@ img{
     }
     .espaçamento-baixo{
         margin-bottom: 10%;
+    }
+    .espaçamento-baixo-elementos{
+        margin-bottom: 5%;
     }
 }
