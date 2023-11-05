@@ -26,6 +26,17 @@
 body{
     background-color: var(--fundo-cor);
 }
+.bola{
+    position: absolute;
+}
+#efeito-vidro{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: #1118273a;
+    backdrop-filter: blur(100px);
+}
 .destaque{
     color: var(--fonte-cor-destaque);
 }
@@ -40,7 +51,6 @@ body{
 .icones-serviços{
     width: 100px;
     height: 100px;
-    margin: 0 auto;
 }
 .caixa-serviço{
     border: 2px solid var(--elementos-cor);
@@ -79,8 +89,8 @@ footer{
         margin: 0 5%;
     }
     .espaçamento-cima-baixo{
-        margin-top: 10%;
-        margin-bottom: 10%;
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
     .espaçamento-baixo{
         margin-bottom: 10%;
@@ -116,12 +126,16 @@ footer{
     .btn{
         display: block;
     }
+    footer{
+        height: 50vh;
+
+    }
     #redes-socias-footer{
         width: 50%;
     }
     .bola{
-        width: 150px;
-        height: 150px;
+        width: 175px;
+        height: 175px;
         border-radius: 150px;
     }
     .bola.rosa{
@@ -130,11 +144,6 @@ footer{
     .bola.azul{
         background-color: var(--fundo-cor-circulo-02);
     }
-    #efeito-vidro{
-        background: var(--fundo-cor);
-        backdrop-filter: blur(100px);
-    }
-
 
     #hero-row, .caixa-imagem-projetos, .redes-socias, footer, #redes-socias-footer{
         display: flex;
@@ -154,4 +163,37 @@ footer{
     .redes-socias, #redes-socias-footer{
         justify-content: space-around;
     }
+
+    #bola-1{
+        top: 90%;
+        left: 30%;
+    }
+    #bola-2{
+        top: 210%;
+        left: 30%;
+    }
+    #bola-3{
+        top: 310%;
+        left: 30%;
+    }
+    #bola-4{
+        top: 410%;
+        left: 30%;
+    }
+    #bola-5{
+        top: 500%;
+        left: 30%;
+    }
+    #bola-6{
+        top: 580%;
+        left: 30%;
+    }
+    #bola-7{
+        top: 690%;
+        left: 30%;
+    }
+    #bola-8{
+        top: 750%;
+        left: 30%;
+    } 
 }
