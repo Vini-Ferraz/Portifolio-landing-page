@@ -29,9 +29,9 @@ body{
 .destaque{
     color: var(--fonte-cor-destaque);
 }
-.btn{
+.btn, .btn-hero-row{
     border: 1px solid var(--elementos-cor);
-    border-radius: 1vw;
+    text-align: center;
 }
 .caixa-serviço{
     border: 2px solid var(--elementos-cor);
@@ -63,5 +63,33 @@ img{
     }
     .espaçamento-baixo-elementos{
         margin-bottom: 5%;
+    }
+
+    #img-hero-row{
+        width: 200px;
+        height: 200px;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 500px;
+        background-size: cover;
+    }
+    .capa-projetos-telas-g-m{
+        display: none;
+    }
+    .capa-projetos-telas-p{
+        width: 186px;
+        height: 285px;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+        background-size: cover;
+    }
+
+    .btn-hero-row, .btn{
+        border-radius: 5vw;
+        padding: 3% 5%;
+    }
+    .btn{
+        display: block;
     }
 }
