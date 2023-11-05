@@ -21,6 +21,7 @@
     font-family: var(--fonte-estilo);
     color: var(--fonte-cor);
     text-decoration: none;
+    transition: 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 body{
@@ -28,6 +29,12 @@ body{
 }
 .bola{
     position: absolute;
+}
+.bola.rosa{
+    background-color: var(--fundo-cor-circulo-01);
+}
+.bola.azul{
+    background-color: var(--fundo-cor-circulo-02);
 }
 #efeito-vidro{
     position: relative;
@@ -43,6 +50,9 @@ body{
 .btn{
     border: 1px solid var(--elementos-cor);
     text-align: center;
+}
+.btn:active{
+    background-color: var(--fundo-cor-circulo-01);
 }
 .icones-redes-sociais{
     width: 50px;
@@ -72,7 +82,7 @@ footer{
     font-style: italic;
 }
 
-@media (max-width: 500px){
+@media (min-width: 500px){
     .titulo-tamanho{
         font-size: var(--fonte-tamanho-titulo-principal-telas-p);
         text-align: center;
@@ -86,17 +96,20 @@ footer{
         text-align: justify;
     }
     .espaçamento-lateral{
-        margin: 0 5%;
+        margin: 0 10%;
     }
     .espaçamento-cima-baixo{
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 20%;
+        padding-bottom: 20%;
     }
     .espaçamento-baixo{
-        margin-bottom: 10%;
+        margin-bottom: 20%;
     }
     .espaçamento-baixo-elementos{
-        margin-bottom: 5%;
+        margin-bottom: 7%;
+    }
+    .espaçamento-baixo-cards{
+        margin-bottom: 10%;
     }
 
     #img-hero-row{
@@ -127,7 +140,7 @@ footer{
         display: block;
     }
     footer{
-        height: 50vh;
+        height: 50vw;
 
     }
     #redes-socias-footer{
@@ -137,12 +150,6 @@ footer{
         width: 175px;
         height: 175px;
         border-radius: 150px;
-    }
-    .bola.rosa{
-        background-color: var(--fundo-cor-circulo-01);
-    }
-    .bola.azul{
-        background-color: var(--fundo-cor-circulo-02);
     }
 
     #hero-row, .caixa-imagem-projetos, .redes-socias, footer, #redes-socias-footer{
@@ -165,35 +172,31 @@ footer{
     }
 
     #bola-1{
-        top: 90%;
+        top: 110%;
         left: 30%;
     }
     #bola-2{
-        top: 210%;
+        top: 240%;
         left: 30%;
     }
     #bola-3{
-        top: 310%;
+        top: 340%;
         left: 30%;
     }
     #bola-4{
-        top: 410%;
+        top: 440%;
         left: 30%;
     }
     #bola-5{
-        top: 500%;
+        top: 540%;
         left: 30%;
     }
     #bola-6{
-        top: 580%;
+        top: 630%;
         left: 30%;
     }
     #bola-7{
-        top: 690%;
+        top: 740%;
         left: 30%;
     }
-    #bola-8{
-        top: 750%;
-        left: 30%;
-    } 
 }
