@@ -17,9 +17,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--fonte-estilo);
+    color: var(--fonte-cor);
+    text-decoration: none;
 }
 
 body{
     background-color: var(--fundo-cor);
+}
+.btn{
+    border: 1px solid var(--elementos-cor);
+    border-radius: 1vw;
 }
