@@ -84,19 +84,19 @@ footer{
 
 @media (min-width: 500px){
     .titulo-tamanho{
-        font-size: var(--fonte-tamanho-titulo-principal-telas-p);
+        font-size: var(--fonte-tamanho-titulo-principal-telas-g-m);
         text-align: center;
     }
     .titulo-secundario-tamanho{
-        font-size: var(--fonte-tamanho-titulo-secundaria-telas-p);
+        font-size: var(--fonte-tamanho-titulo-secundaria-telas-g-m);
         text-align: center;
     }
     .paragrafo-tamanho{
-        font-size: var(--fonte-tamanho-paragrafos-telas-p);
+        font-size: var(--fonte-tamanho-paragrafos-telas-g-m);
         text-align: justify;
     }
     .espaçamento-lateral{
-        margin: 0 10%;
+        margin: 0 20%;
     }
     .espaçamento-cima-baixo{
         padding-top: 20%;
@@ -113,23 +113,21 @@ footer{
     }
 
     #img-hero-row{
-        width: 200px;
-        height: 200px;
-        max-width: 100%;
-        max-height: 100%;
-        border-radius: 500px;
+        width: 400px;
+        height: 400px;
+        border-radius: 400px;
         background-size: cover;
     }
     .capa-projetos-telas-g-m{
-        display: none;
-    }
-    .capa-projetos-telas-p{
-        width: 186px;
-        height: 285px;
+        width: 508px;
+        height: 250px;
         max-width: 100%;
         max-height: 100%;
         border-radius: 10px;
         background-size: cover;
+    }
+    .capa-projetos-telas-p{
+        display: none;
     }
 
     .btn{
@@ -147,9 +145,9 @@ footer{
         width: 50%;
     }
     .bola{
-        width: 175px;
-        height: 175px;
-        border-radius: 150px;
+        width: 300px;
+        height: 300px;
+        border-radius: 300px;
     }
 
     #hero-row, .caixa-imagem-projetos, .redes-socias, footer, #redes-socias-footer{
@@ -172,31 +170,31 @@ footer{
     }
 
     #bola-1{
-        top: 110%;
+        top: 160%;
         left: 30%;
     }
     #bola-2{
-        top: 240%;
+        top: 280%;
         left: 30%;
     }
     #bola-3{
-        top: 340%;
+        top: 380%;
         left: 30%;
     }
     #bola-4{
-        top: 440%;
+        top: 500%;
         left: 30%;
     }
     #bola-5{
-        top: 540%;
+        top: 620%;
         left: 30%;
     }
     #bola-6{
-        top: 630%;
+        top: 730%;
         left: 30%;
     }
     #bola-7{
-        top: 740%;
+        top: 860%;
         left: 30%;
     }
 }
