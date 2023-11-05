@@ -29,3 +29,28 @@ body{
     border: 1px solid var(--elementos-cor);
     border-radius: 1vw;
 }
+img{
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 500px){
+    .titulo-tamanho{
+        font-size: var(--fonte-tamanho-titulo-principal-telas-p);
+    }
+    .titulo-secundario-tamanho{
+        font-size: var(--fonte-tamanho-titulo-secundaria-telas-p);
+    }
+    .paragrafo-tamanho{
+        font-size: var(--fonte-tamanho-paragrafos-telas-p);
+    }
+    .espaçamento-lateral{
+        margin: 0 5%;
+    }
+    .espaçamento-cima-baixo{
+        margin: 10% 0;
+    }
+    .espaçamento-baixo{
+        margin-bottom: 10%;
+    }
+}
