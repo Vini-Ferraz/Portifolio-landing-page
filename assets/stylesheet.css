@@ -1,8 +1,9 @@
+/*Regras CSS gerais para configuração da página*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 :root{
     --fundo-cor: #111827;
-    --fundo-cor-circulo-01: #bd22d4;
-    --fundo-cor-circulo-02: #0182CA;
+    --fundo-gradient-01: #111827;
+    --fundo-gradient-02: #4B1231;
     --elementos-cor: #FFFFFF;
     --fonte-cor: #FFFFFF;
     --fonte-cor-destaque: #20C2CC;
@@ -27,8 +28,9 @@
 html.sr, .hidden{
     display: hidden;
 }
+/*Regras CSS que se aplicam em elementos não importa o tamanho da tela*/
 body{
-    background: linear-gradient(179deg, #111827 0%, #4B1231 100%);
+    background: linear-gradient(179deg, var(--fundo-gradient-01) 0%, var(--fundo-gradient-02) 100%);
 }
 .destaque{
     color: var(--fonte-cor-destaque);
@@ -38,7 +40,7 @@ body{
     text-align: center;
 }
 .btn:active{
-    background-color: var(--fundo-cor-circulo-01);
+    background-color: var(--fonte-cor-destaque);
 }
 .icones-redes-sociais{
     width: 50px;
@@ -55,20 +57,17 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-img{
-    width: 200px;
-    height: 200px;
-}
-footer{
-    border-top: 1px solid var(--elementos-cor);
+    justify-content: space-evenly;
 }
 .texto-footer{
     font-style: italic;
 }
-
+footer{
+    border-top: 1px solid var(--elementos-cor);
+}
+/*Regras CSS para telas de celulares*/
 @media (max-width: 520px){
+    /*Regras CSS para fontes e espaçamento*/
     .titulo-tamanho{
         font-size: var(--fonte-tamanho-titulo-principal-telas-p);
         text-align: center;
@@ -97,7 +96,7 @@ footer{
     .espaçamento-baixo-cards{
         margin-bottom: 10%;
     }
-
+    /*Regras CSS imagens*/
     #img-hero-row{
         width: 200px;
         height: 200px;
@@ -120,7 +119,7 @@ footer{
     .capa-projetos-telas-g-m{
         display: none;
     }
-
+    /*Regras CSS para dimensões de elementos*/
     .btn{
         border-radius: 5vw;
         padding: 3% 5%;
@@ -134,7 +133,7 @@ footer{
     #redes-socias-footer{
         width: 50%;
     }
-
+    /*Regras CSS para elementos flex*/
     #hero-row, .caixa-imagem-projetos, .redes-socias, footer, #redes-socias-footer{
         display: flex;
     }
@@ -154,11 +153,9 @@ footer{
         justify-content: space-around;
     }
 }
-
+/*Regras CSS para telas de tablets*/
 @media (min-width: 521px){
-    #efeito-vidro{
-        backdrop-filter: blur(100px);
-    }
+    /*Regras CSS para fontes e espaçamento*/
     .titulo-tamanho{
         font-size: var(--fonte-tamanho-titulo-principal-telas-g-m);
         text-align: center;
@@ -190,7 +187,7 @@ footer{
     .espaçamento-baixo-cards{
         margin-bottom: 10%;
     }
-
+    /*Regras CSS imagens*/
     #img-hero-row{
         width: 400px;
         height: 400px;
@@ -208,7 +205,7 @@ footer{
         border-radius: 10px;
         background-size: cover;
     }
-
+    /*Regras CSS para dimensões de elementos*/
     .btn{
         border-radius: 5vw;
         padding: 3% 5%;
@@ -222,12 +219,7 @@ footer{
     #redes-socias-footer{
         width: 50%;
     }
-    .bola{
-        width: 300px;
-        height: 300px;
-        border-radius: 300px;
-    }
-
+    /*Regras CSS para elementos flex*/
     #hero-row, .caixa-imagem-projetos, .redes-socias, footer, #redes-socias-footer{
         display: flex;
     }
@@ -247,11 +239,9 @@ footer{
         justify-content: space-around;
     }
 }
-
+/*Regras CSS para telas de computadores*/
 @media (min-width: 1082px){
-    #efeito-vidro{
-        backdrop-filter: blur(100px);
-    }
+    /*Regras CSS para fontes e espaçamento*/
     .espaçamento-lateral{
         margin: 0 5%;
     }
@@ -268,7 +258,7 @@ footer{
     .espaçamento-baixo-cards{
         margin-bottom: 5%;
     }
-    
+    /*Regras CSS para dimensões de elementos*/
     #caixa-texto-hero-row, .caixa-projeto{
         width: 40vw;
     }
@@ -283,11 +273,7 @@ footer{
     #redes-socias-footer{
         width: 25%;
     }
-
-    .capa-projetos-telas-g-m{
-        width: 100%;
-    }
-
+    /*Regras CSS para elementos flex*/
     #hero-row, #seção-meus-projetos-flex, #seção-serviços-flex, .redes-socias{
         display: flex;
     }
