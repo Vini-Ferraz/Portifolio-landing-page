@@ -24,7 +24,7 @@
     transition: 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 body{
-    background-color: var(--fundo-cor);
+    background: linear-gradient(180deg, #111827 0%, #39124B 100%);
 }
 .bola{
     position: absolute;
@@ -81,7 +81,7 @@ footer{
     font-style: italic;
 }
 
-@media (max-width: 500px){
+@media (max-width: 520px){
     .titulo-tamanho{
         font-size: var(--fonte-tamanho-titulo-principal-telas-p);
         text-align: center;
@@ -202,9 +202,9 @@ footer{
     }
 }
 
-@media (min-width: 500px){
+@media (min-width: 521px){
     #efeito-vidro{
-        backdrop-filter: blur(300px);
+        backdrop-filter: blur(100px);
     }
     .titulo-tamanho{
         font-size: var(--fonte-tamanho-titulo-principal-telas-g-m);
@@ -324,9 +324,9 @@ footer{
     }
 }
 
-@media (min-width: 1300px){
+@media (min-width: 1082px){
     #efeito-vidro{
-        backdrop-filter: blur(400px);
+        backdrop-filter: blur(100px);
     }
     .espaçamento-lateral{
         margin: 0 5%;
@@ -354,17 +354,17 @@ footer{
         padding: 0% 2%;
     }
     footer{
-        height: 25vw;
+        height: 15vw;
     }
     #redes-socias-footer{
-        width: 45%;
+        width: 25%;
     }
 
     .capa-projetos-telas-g-m{
         width: 100%;
     }
 
-    #hero-row, #seção-meus-projetos-flex, #seção-serviços-flex{
+    #hero-row, #seção-meus-projetos-flex, #seção-serviços-flex, .redes-socias{
         display: flex;
     }
     #hero-row{
@@ -382,7 +382,9 @@ footer{
     #hero-row, #seção-meus-projetos-flex{
         justify-content: space-between;
     }
-
+    .redes-socias{
+        justify-content: space-evenly;
+    }
 
     #bola-1{
         top: 45%;
@@ -401,15 +403,15 @@ footer{
         left: 10%;
     }
     #bola-5{
-        top: 420%;
+        top: 400%;
         left: 5%;
     }
     #bola-6{
-        top: 420%;
+        top: 400%;
         left: 40%;
     }
     #bola-7{
-        top: 420%;
+        top: 400%;
         left: 70%;
     }
 }
