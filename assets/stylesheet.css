@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 :root{
     --fundo-cor: #111827;
-    --fundo-cor-circulo-01: #E064F4;
+    --fundo-cor-circulo-01: #bd22d4;
     --fundo-cor-circulo-02: #0182CA;
     --elementos-cor: #FFFFFF;
     --fonte-cor: #FFFFFF;
@@ -214,6 +214,9 @@ footer{
         font-size: var(--fonte-tamanho-titulo-secundaria-telas-g-m);
         text-align: center;
     }
+    .esquerdo{
+        text-align: left;
+    }
     .paragrafo-tamanho{
         font-size: var(--fonte-tamanho-paragrafos-telas-g-m);
         text-align: justify;
@@ -251,9 +254,6 @@ footer{
         max-height: 100%;
         border-radius: 10px;
         background-size: cover;
-    }
-    .capa-projetos-telas-p{
-        display: none;
     }
 
     .btn{
@@ -321,5 +321,95 @@ footer{
     #bola-7{
         top: 860%;
         left: 30%;
+    }
+}
+
+@media (min-width: 1300px){
+    #efeito-vidro{
+        backdrop-filter: blur(400px);
+    }
+    .espaçamento-lateral{
+        margin: 0 5%;
+    }
+    .espaçamento-cima-baixo{
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+    .espaçamento-baixo{
+        margin-bottom: 7%;
+    }
+    .espaçamento-baixo-elementos{
+        margin-bottom: 5%;
+    }
+    .espaçamento-baixo-cards{
+        margin-bottom: 5%;
+    }
+    
+    #caixa-texto-hero-row, .caixa-projeto{
+        width: 40vw;
+    }
+    .caixa-serviço{
+        width: 30vw;
+        height: 45vw;
+        padding: 0% 2%;
+    }
+    footer{
+        height: 25vw;
+    }
+    #redes-socias-footer{
+        width: 45%;
+    }
+
+    .capa-projetos-telas-g-m{
+        width: 100%;
+    }
+
+    #hero-row, #seção-meus-projetos-flex, #seção-serviços-flex{
+        display: flex;
+    }
+    #hero-row{
+        flex-direction: row;
+    }
+    #seção-meus-projetos-flex{
+        flex-wrap: wrap;
+    }
+    #seção-serviços-flex{
+        gap: 3%;
+    }
+    #hero-row, #seção-meus-projetos-flex, #seção-serviços-flex{
+        align-items: center;
+    }
+    #hero-row, #seção-meus-projetos-flex{
+        justify-content: space-between;
+    }
+
+
+    #bola-1{
+        top: 45%;
+        left: 12%;
+    }
+    #bola-2{
+        top: 180%;
+        left: 10%;
+    }
+    #bola-3{
+        top: 180%;
+        left: 65%;
+    }
+    #bola-4{
+        top: 290%;
+        left: 10%;
+    }
+    #bola-5{
+        top: 420%;
+        left: 5%;
+    }
+    #bola-6{
+        top: 420%;
+        left: 40%;
+    }
+    #bola-7{
+        top: 420%;
+        left: 70%;
     }
 }
