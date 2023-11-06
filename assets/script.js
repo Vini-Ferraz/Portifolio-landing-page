@@ -2,7 +2,7 @@ ScrollReveal({ reset: true });
 
 ScrollReveal().reveal('.reveal', 
 {
-    duration: 2000,
+    duration: 1500,
     origin: 'bottom',
     distance: '100px'
 }

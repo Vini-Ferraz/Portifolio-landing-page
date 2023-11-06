@@ -28,7 +28,7 @@ html.sr, .hidden{
     display: hidden;
 }
 body{
-    background: linear-gradient(180deg, #111827 0%, #26124b 100%);
+    background: linear-gradient(179deg, #111827 0%, #4B1231 100%);
 }
 .destaque{
     color: var(--fonte-cor-destaque);
