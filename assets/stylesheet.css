@@ -76,10 +76,11 @@ footer{
     }
     .paragrafo-tamanho{
         font-size: var(--fonte-tamanho-paragrafos-telas-p);
-        text-align: justify;
+        text-align: center;
+        line-height: 145%;
     }
     .espaçamento-lateral{
-        margin: 0 5%;
+        margin: 0 7%;
     }
     .espaçamento-cima-baixo{
         padding-top: 20%;
