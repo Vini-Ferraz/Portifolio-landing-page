@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 :root{
     --fundo-cor: #111827;
-    --fundo-gradient-01: #111827;
-    --fundo-gradient-02: #2b124b;
     --elementos-cor: #FFFFFF;
     --fonte-cor: #FFFFFF;
     --fonte-cor-destaque: #20C2CC;
+    --cor-bola-rosa: #f35bf3;
+    --cor-bola-azul: #64f3ec;
     --fonte-estilo: 'Roboto', sans-serif;
     --fonte-tamanho-titulo-principal-telas-g-m: 50px;
     --fonte-tamanho-titulo-secundaria-telas-g-m: 30px;
@@ -25,12 +25,23 @@
     transition: 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
     scroll-behavior: smooth;
 }
+@keyframes bola-animação {
+    0%{
+        background-color: var(--cor-bola-azul);
+    }
+    50%{
+        background-color: var(--cor-bola-rosa);
+    }
+    100%{
+        background-color: var(--cor-bola-azul);
+    }
+}
 html.sr, .hidden{
     display: hidden;
 }
 /*Regras CSS que se aplicam em elementos não importa o tamanho da tela*/
 body{
-    background: linear-gradient(179deg, var(--fundo-gradient-01) 0%, var(--fundo-gradient-02) 100%);
+    background-color: var(--fundo-cor);
 }
 .destaque{
     color: var(--fonte-cor-destaque);
@@ -64,6 +75,15 @@ body{
 }
 footer{
     border-top: 1px solid var(--elementos-cor);
+}
+
+.bola{
+    border-radius: 500px;
+    position: absolute;
+    z-index: 1;
+    animation-name: bola-animação;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 /*Regras CSS para telas de celulares*/
 @media (max-width: 520px){
@@ -119,7 +139,24 @@ footer{
     .capa-projetos-telas-g-m{
         display: none;
     }
+    #b1{
+        left: 32.5%;
+        top: 80%;  
+    }
+    #b2{
+        left: 32.5%;
+        top: 80%;  
+    }
+    #b3{
+        left: 32.5%;
+        top: 30%;  
+    }
     /*Regras CSS para dimensões de elementos*/
+    .bola{
+        filter: blur(70px);
+        width: 40vw;
+        height: 40vw;
+    }
     .btn{
         border-radius: 5vw;
         padding: 3% 5%;
@@ -205,7 +242,24 @@ footer{
         border-radius: 10px;
         background-size: cover;
     }
+    #b1{
+        left: 32.5%;
+        top: 75%;  
+    }
+    #b2{
+        left: 32.5%;
+        top: 70%;  
+    }
+    #b3{
+        left: 32.5%;
+        top: 30%;  
+    }
     /*Regras CSS para dimensões de elementos*/
+    .bola{
+        filter: blur(85px);
+        width: 20vw;
+        height: 20vw;
+    }
     .btn{
         border-radius: 5vw;
         padding: 3% 5%;
@@ -258,9 +312,26 @@ footer{
     .espaçamento-baixo-cards{
         margin-bottom: 5%;
     }
+    #b1{
+        left: 12%;
+        top: 50%;  
+    }
+    #b2{
+        left: 25%;
+        top: 65%;  
+    }
+    #b3{
+        left: 25%;
+        top: 20%;  
+    }
     /*Regras CSS para dimensões de elementos*/
     #caixa-texto-hero-row, .caixa-projeto{
         width: 40vw;
+    }
+    .bola{
+        filter: blur(100px);
+        width: 15vw;
+        height: 15vw;
     }
     .caixa-serviço{
         width: 30vw;
